@@ -1,1 +1,5 @@
 node_modules
+utils
+database
+.env
+.env.local
