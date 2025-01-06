@@ -1,6 +1,6 @@
 # APIs
 
-This repository would contain different Application Programming Interfaces (API). 
+This repository would contain different Application Programming Interfaces (APIs). 
 
 ## Table of contents
 
@@ -26,7 +26,8 @@ The challenge for this project would gradually upscale as I go from beginners id
 
 ### Links
 
-This section would contain links of each hosted solution and would grow as soon as each API is hosted.
+This section contains link to each challenge README.
+- [Quiz Game](./1-Quiz-Game/README.md)
 
 ## My process
 
@@ -40,4 +41,4 @@ I would discuss new developments under the README.md of each new project folder.
 
 ## Acknowledgments
 
-My acknowledgement goes to @Kaperskyguru on Twitter for providing these ideas and all the designers on Behance whom I would use their designs as guide :) (I won't fail to give specific acknowledgments to each in the specified folder README.md)
+My acknowledgement goes to @Kaperskyguru on X for providing these ideas and all the designers on Behance whom I would use their designs as guide :) (I won't fail to give specific acknowledgments to each in the specified folder README.md)
