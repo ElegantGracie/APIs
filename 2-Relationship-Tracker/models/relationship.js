@@ -1,10 +1,6 @@
 const Sequelize = require("sequelize");
 const { sequelize } = require("../utils/connectDB");
 const User = require("./user");
-const Memory = require("./memory");
-const Reminder = require("./reminder");
-const Media = require("./media");
-const Partner = require("./partner");
 
 const Relationship = sequelize.define("Relationship", {
     id: {
@@ -14,6 +10,11 @@ const Relationship = sequelize.define("Relationship", {
     },
     user: {
         type: Sequelize.UUID,
+        references: {
+            model: User,
+            key: "id"
+        },
+        onDelete: "CASCADE",
         allowNull: false
     },
     type: {
@@ -34,11 +35,5 @@ const Relationship = sequelize.define("Relationship", {
         allowNull: true
     },
 });
-
-// Relationship.belongsTo(User, {foreignKey: "user"});
-// Relationship.hasMany(Memory, {foreignKey: "relationship"});
-// Relationship.hasMany(Reminder, {foreignKey: "relationship"});
-// Relationship.hasMany(Media, {foreignKey: "relationship"});
-// Relationship.hasMany(Partner, {foreignKey: "relationship"});
 
 module.exports = Relationship;

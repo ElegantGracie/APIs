@@ -2,7 +2,6 @@ const Sequelize = require("sequelize");
 const { sequelize } = require("../utils/connectDB");
 const Relationship = require("./relationship");
 const User = require("./user");
-const Media = require("./media");
 const Tag = require("./tag");
 
 const Memory = sequelize.define("Memory", {
@@ -53,10 +52,5 @@ const Memory = sequelize.define("Memory", {
         allowNull: false
     }
 });
-
-// Memory.belongsTo(Relationship, {foreignKey: 'relationship'});
-// Memory.belongsTo(User, {foreignKey: 'user'});
-// Memory.hasMany(Media, {foreignKey: 'memory'});
-// Memory.belongsTo(Tag, {foreignKey: 'tag'});
 
 module.exports = Memory;

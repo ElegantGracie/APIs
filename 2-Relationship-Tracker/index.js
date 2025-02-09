@@ -19,6 +19,8 @@ app.get("/", (_, res) => {
 });
 
 app.use('/api/v1/auth', require("./routes/auth"));
+// app.use('/api/v1/user', require("./routes/user"));
+app.use("/api/v1/relationship", require("./routes/relationship"));
 
 app.all("*", (_, res) =>
   res.status(404).send({ success: false, message: "route not found" })

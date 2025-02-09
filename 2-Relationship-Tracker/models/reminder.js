@@ -61,8 +61,4 @@ const Reminder = sequelize.define("Reminder", {
     }
 });
 
-// Reminder.belongsTo(User, { foreignKey: "user" });
-// Reminder.belongsTo(Relationship, { foreignKey: "relationship" });
-// Reminder.belongsTo(Memory, { foreignKey: "memory" });
-
 module.exports = Reminder;

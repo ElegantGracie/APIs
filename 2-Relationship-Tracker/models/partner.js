@@ -40,10 +40,13 @@ const Partner = sequelize.define("Partner", {
         },
         onDelete: 'CASCADE',
         allowNull: false
-    }
+    },
+    yourPhoto: {
+        type: Sequelize.STRING(255)
+    },
+    partnerPhoto: {
+        type: Sequelize.STRING(255)
+    },
 });
-
-// Partner.belongsTo(User, { foreignKey: 'user' });
-// Partner.belongsTo(Relationship, { foreignKey: 'relationship' });
 
 module.exports = Partner;
