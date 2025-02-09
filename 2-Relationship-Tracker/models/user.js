@@ -38,7 +38,8 @@ const User = sequelize.define("User", {
         unique: true
     },
     photo: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: true
     }
 });
 

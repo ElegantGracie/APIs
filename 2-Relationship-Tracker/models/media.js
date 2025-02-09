@@ -49,8 +49,4 @@ const Media = sequelize.define("Media", {
     }
 });
 
-// Media.belongsTo(User, {foreignKey: "user"});
-// Media.belongsTo(Relationship, {foreignKey: "relationship"});
-// Media.belongsTo(Memory, {foreignKey: "memory"});
-
 module.exports = Media;

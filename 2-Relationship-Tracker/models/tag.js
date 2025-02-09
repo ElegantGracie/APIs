@@ -1,7 +1,6 @@
 const Sequelize = require("sequelize");
 const { sequelize } = require("../utils/connectDB");
 const User = require("./user");
-const Memory = require("./memory");
 
 const Tag = sequelize.define("Tag", {
     id: {
@@ -15,7 +14,8 @@ const Tag = sequelize.define("Tag", {
         references: {
             model: User,
             key: "id"
-        }
+        },
+        onDelete: "CASCADE"
     },
     name: {
         type: Sequelize.STRING,
@@ -27,8 +27,5 @@ const Tag = sequelize.define("Tag", {
 }, {
     timestamps: false
 });
-
-// Tag.belongsTo(User, {foreignKey: "user"});
-// Tag.hasMany(Memory, {foreignKey: "tag"});
 
 module.exports = Tag;
